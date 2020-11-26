@@ -1,5 +1,9 @@
 # Import the Flask class from the flask module
+from config import get_config
 from flask import Flask
+from utils import DBManager
+
+config = get_config("live")
 
 # create the application object
 app = Flask(__name__)
